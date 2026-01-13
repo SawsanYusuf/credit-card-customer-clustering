@@ -1,5 +1,99 @@
-# Credit Card Customer Clustering
+# Credit Card Customer Clustering Analysis
 ![](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/stephen-phillips-hostreviews-co-uk-em37kS8WJJQ-unsplash.jpg)
+
+## Project Overview
+
+This project aims to analyze and segment credit card users based on their financial behavior and transaction patterns. By leveraging **Machine Learning (K-Means Clustering)**, we identified distinct customer personas to optimize product offerings and marketing strategies for financial institutions.
+
+
+## Dataset Overview
+
+The dataset is sourced from **Kaggle** ([CC General Dataset](https://www.kaggle.com/datasets/hassanraof/cc-general-csv)) and contains the usage behavior of approximately **8,950 active credit card holders**.
+
+* **Data Structure:** 18 features (17 numerical variables + 1 unique identifier `CUST_ID`).
+* **Key Features:** `BALANCE`, `PURCHASES`, `CASH_ADVANCE`, `CREDIT_LIMIT`, and `PAYMENTS`.
+
+
+## Project Steps
+
+### 1️⃣ Data Exploration & Cleaning
+
+* **Missing Values:** Found minimal missing data in `MINIMUM_PAYMENTS` (3.49%) and `CREDIT_LIMIT` (0.01%).
+* **Imputation:** Missing values were filled using **Mean Imputation** to maintain the dataset size and statistical integrity.
+* **Outlier Detection:** Used Boxplots to identify significant skewness in spending and credit limits.
+
+![Distribution of Credit Cards Limit](newplot (1).png)
+
+### 2️⃣ Feature Selection (Variance Analysis)
+
+To improve clustering performance, we focused on features with high discriminative power:
+
+* **Trimmed Variance:** Calculated the trimmed variance to identify features that represent typical behavior while reducing the noise from extreme outliers.
+* **Final Features:** Selected the **Top 5** features: `PURCHASES`, `CASH_ADVANCE`, `PAYMENTS`, `BALANCE`, and `CREDIT_LIMIT`.
+
+| High Variance (Raw) | Trimmed Variance (Selected) |
+| --- | --- |
+|  | ![Trimmed Variance](newplot (2).png) |
+
+### 3️⃣ Model Development & Evaluation
+
+* **Scaling:** Applied `StandardScaler` to normalize the data before clustering.
+* **K-Means Tuning:** Iterated through  values (2 to 12) to find the optimal balance between **Inertia** and **Silhouette Score**.
+* **Final Decision:** Selected **** as the optimal number of clusters for business interpretability.
+* **Visualization:** Used **PCA (Principal Component Analysis)** to represent the 3D clusters in a 2D space.
+
+![PCA Representation of Clusters](newplot (3).png)
+
+---
+
+## 📊 Visualizations & Insights
+
+Analyzing the mean financial metrics for each cluster reveals clear behavioral boundaries:
+
+![Mean Household Finances by Cluster](newplot (4).png)
+
+* **Cluster 1:** High spending and high payment activity (The Elite).
+* **Cluster 0:** Balanced spending with stable credit limits (The Affluent).
+* **Cluster 2:** Routine, low-value daily transactions (Everyday Users).
+
+---
+
+## 🚀 Recommendations
+
+Based on the distinct characteristics of the identified customer clusters, the following credit card recommendations are proposed:
+
+### Cluster 1: The Elite (Platinum Card Holders)
+
+* **Characteristics:** High-value customers with substantial financial activity and high repayment rates.
+* **Recommendation:** **Platinum Credit Card** ($40,000 - $1M Limit).
+* **Strategic Focus:** Exclusive benefits, personalized premium services, luxury perks, and dedicated support.
+
+### Cluster 0: The Affluent Spenders (Gold Card Holders)
+
+* **Characteristics:** Customers with strong monthly income and consistent spending/repayment capacity.
+* **Recommendation:** **Gold Credit Card** ($10,000 - $40,000 Limit).
+* **Strategic Focus:** Generous rewards programs, attractive cashback incentives, and travel-related benefits.
+
+### Cluster 2: The Everyday Users (Silver Card Holders)
+
+* **Characteristics:** The largest and most accessible segment, using cards for routine day-to-day transactions.
+* **Recommendation:** **Silver Credit Card** ($4,000 - $7,000 Limit).
+* **Strategic Focus:** Ease of access, fundamental convenience, and tools for building/managing credit history.
+
+---
+
+## 🛠 Technologies Used
+
+* **Language:** Python 🐍
+* **Libraries:** Pandas, NumPy, Scikit-learn (KMeans, PCA), Plotly, Matplotlib, Seaborn.
+* **Environment:** Jupyter Notebook / Kaggle.
+
+---
+
+بهذه الطريقة، أصبح المشروع منظماً بنفس الأسلوب الاحترافي لمشروع الأرجنتين، مع إبراز قوتك في التحليل الإحصائي (Variance) واختيار النموذج. هل ترغبين في أي تعديل إضافي؟
+
+
+
 
 This project focuses on performing customer segmentation using unsupervised machine learning techniques on credit card usage data. The primary goal is to identify distinct segments of active credit card holders, understand their unique characteristics, and provide actionable insights for businesses to develop more targeted and effective marketing strategies.
 
