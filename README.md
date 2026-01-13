@@ -38,7 +38,7 @@ To improve clustering performance, we focused on features with high discriminati
 
 * **Scaling:** Applied `StandardScaler` to normalize the data before clustering.
 * **K-Means Tuning:** Iterated through  values (2 to 12) to find the optimal balance between **Inertia** and **Silhouette Score**.
-* **Final Decision:** Selected **** as the optimal number of clusters for business interpretability.
+* **Final Decision:** Selected **$K=3$** as the optimal number of clusters for business interpretability.
 * **Visualization:** Used **PCA (Principal Component Analysis)** to represent the 3D clusters in a 2D space.
 
 ![PCA Representation of Clusters](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/PCA.png)
