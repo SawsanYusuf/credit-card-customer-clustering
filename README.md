@@ -122,21 +122,27 @@ Recommendations for Targeted Credit Card Offerings
 Based on the distinct characteristics of the identified customer clusters, the following credit card recommendations are proposed to optimize product offerings and marketing strategies:
 
 Cluster 0: The Elite (Platinum Card Holders)
+
 Characteristics: This segment likely represents high-value customers with substantial financial activity. These cards are typically owned by a select few due to strict eligibility requirements and high income/credit history demands.
+
 Recommendation: Platinum Credit Card (Highest Level)
 Credit Limit: Ranges from $40,000 up to $1 million.
 Eligibility: Cardholders must have a regular, high income (e.g., at least $1,800 per month – assuming 'per year' was a typo and adjusting to a more typical income for this tier) and an excellent credit history, reflecting a rigorous application procedure.
 Strategic Focus: Target with exclusive benefits, personalized premium services, luxury perks, and dedicated support to reinforce their elite status.
 
 Cluster 1: The Affluent Spenders (Gold Card Holders)
+
 Characteristics: This segment consists of customers with a strong and consistent monthly income, indicating a significant capacity for both spending and diligent repayment.
+
 Recommendation: Gold Credit Card
 Credit Limit: Ranges from $10,000 to $40,000, providing ample room for substantial purchases and financial flexibility.
 Benefits: Ideal for users who frequently make larger purchases and require options for repaying big-budget items.
 Strategic Focus: Emphasize generous rewards programs, attractive cashback incentives on higher spending, and benefits tailored to their active consumer behavior, such as travel perks.
 
 Cluster 2: The Everyday Users (Silver Card Holders)
+
 Characteristics: This is the most widely owned and accessible segment, representing customers who primarily use credit cards for routine, day-to-day transactions with lower spending limits.
+
 Recommendation: Silver Credit Card
 Credit Limit: The lowest credit limit, typically ranging from $4,000 to $7,000, suitable for common expenses.
 Eligibility: More broadly accessible, requiring a lower minimum monthly salary (e.g., at least $400 per month).
