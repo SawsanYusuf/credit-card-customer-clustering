@@ -33,7 +33,6 @@ To improve clustering performance, we focused on features with high discriminati
 | High Variance (Raw) | Trimmed Variance (Selected) |
 | --- | --- |
 |  | ![](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/high%20variance.png)
- |
 
 ### 3. Model Development & Evaluation
 
@@ -58,9 +57,6 @@ Analyzing the mean financial metrics for each cluster reveals clear behavioral b
 * **Cluster 0:** Balanced spending with stable credit limits (The Affluent).
 * **Cluster 2:** Routine, low-value daily transactions (Everyday Users).
 
-
-
-## Recommendations
 
 ## Outcomes & Business Impact
 
@@ -141,4 +137,3 @@ The integration of this segmentation model allows for:
 
       
       
- Adjusting card features to better serve the identified needs of the "Elite" vs. "Everyday" user.
