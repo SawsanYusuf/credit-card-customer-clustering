@@ -1,5 +1,4 @@
 # Credit Card Customer Clustering Analysis
-![](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/stephen-phillips-hostreviews-co-uk-em37kS8WJJQ-unsplash.jpg)
 
 ## Project Overview
 
@@ -8,7 +7,7 @@ This project aims to analyze and segment credit card users based on their financ
 
 ## Dataset Overview
 
-The dataset is sourced from **Kaggle** ([CC General Dataset](https://www.kaggle.com/datasets/hassanraof/cc-general-csv)) and contains the usage behavior of approximately **8,950 active credit card holders**.
+The dataset is sourced from **Kaggle** ([Dataset](https://www.kaggle.com/datasets/hassanraof/cc-general-csv)) and contains the usage behavior of approximately **8,950 active credit card holders**.
 
 * **Data Structure:** 18 features (17 numerical variables + 1 unique identifier `CUST_ID`).
 * **Key Features:** `BALANCE`, `PURCHASES`, `CASH_ADVANCE`, `CREDIT_LIMIT`, and `PAYMENTS`.
@@ -16,15 +15,15 @@ The dataset is sourced from **Kaggle** ([CC General Dataset](https://www.kaggle.
 
 ## Project Steps
 
-### 1️⃣ Data Exploration & Cleaning
+### 1. Data Exploration & Cleaning
 
 * **Missing Values:** Found minimal missing data in `MINIMUM_PAYMENTS` (3.49%) and `CREDIT_LIMIT` (0.01%).
 * **Imputation:** Missing values were filled using **Mean Imputation** to maintain the dataset size and statistical integrity.
 * **Outlier Detection:** Used Boxplots to identify significant skewness in spending and credit limits.
 
-![Distribution of Credit Cards Limit](newplot (1).png)
+![Distribution of Credit Cards Limit](https://github.com/SawsanYusuf/credit-card-customer-clustering/blob/main/Images/newplot.png)
 
-### 2️⃣ Feature Selection (Variance Analysis)
+### 2. Feature Selection (Variance Analysis)
 
 To improve clustering performance, we focused on features with high discriminative power:
 
@@ -33,9 +32,10 @@ To improve clustering performance, we focused on features with high discriminati
 
 | High Variance (Raw) | Trimmed Variance (Selected) |
 | --- | --- |
-|  | ![Trimmed Variance](newplot (2).png) |
+|  | ![](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/high%20variance.png)
+ |
 
-### 3️⃣ Model Development & Evaluation
+### 3. Model Development & Evaluation
 
 * **Scaling:** Applied `StandardScaler` to normalize the data before clustering.
 * **K-Means Tuning:** Iterated through  values (2 to 12) to find the optimal balance between **Inertia** and **Silhouette Score**.
@@ -46,7 +46,7 @@ To improve clustering performance, we focused on features with high discriminati
 
 ---
 
-## 📊 Visualizations & Insights
+## Visualizations & Insights
 
 Analyzing the mean financial metrics for each cluster reveals clear behavioral boundaries:
 
@@ -58,7 +58,7 @@ Analyzing the mean financial metrics for each cluster reveals clear behavioral b
 
 ---
 
-## 🚀 Recommendations
+## Recommendations
 
 Based on the distinct characteristics of the identified customer clusters, the following credit card recommendations are proposed:
 
@@ -80,9 +80,9 @@ Based on the distinct characteristics of the identified customer clusters, the f
 * **Recommendation:** **Silver Credit Card** ($4,000 - $7,000 Limit).
 * **Strategic Focus:** Ease of access, fundamental convenience, and tools for building/managing credit history.
 
----
 
-## 🛠 Technologies Used
+
+## Technologies Used
 
 * **Language:** Python 🐍
 * **Libraries:** Pandas, NumPy, Scikit-learn (KMeans, PCA), Plotly, Matplotlib, Seaborn.
@@ -90,7 +90,6 @@ Based on the distinct characteristics of the identified customer clusters, the f
 
 ---
 
-بهذه الطريقة، أصبح المشروع منظماً بنفس الأسلوب الاحترافي لمشروع الأرجنتين، مع إبراز قوتك في التحليل الإحصائي (Variance) واختيار النموذج. هل ترغبين في أي تعديل إضافي؟
 
 
 
@@ -161,7 +160,6 @@ df.drop(columns='CUST_ID', inplace=True)
 
 * Based on the variance analysis, the 5 features with the highest variance were selected for the clustering model. These features were identified as most influential in differentiating customer behavior: PURCHASES, CASH_ADVANCE, PAYMENTS, BALANCE, CREDIT_LIMIT.
 
-![](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/high%20variance.png)
 
 ### 5. Data Scaling:
 * Utilized StandardScaler to scale the selected features. This is crucial for K-Means clustering, as it's sensitive to feature magnitudes, ensuring all features contribute equally to the distance calculations.
