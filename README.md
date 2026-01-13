@@ -41,16 +41,22 @@ To improve clustering performance, we focused on features with high discriminati
 * **Final Decision:** Selected **$K=3$** as the optimal number of clusters for business interpretability.
 * **Visualization:** Used **PCA (Principal Component Analysis)** to represent the 3D clusters in a 2D space.
 
-![PCA Representation of Clusters](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/PCA.png)
+##  Visualizing & Validating Clusters
+Since the visualizations were created using **Plotly Express**, which may not render directly in the GitHub Notebook view, they are provided below with a detailed analysis:
 
+### **1. Why $K=3$ Clusters? (Numerical Validation)**
+The decision to finalize the model with 3 clusters was based on a comparative analysis of **Inertia** and **Silhouette Scores**:
+* **Inertia Analysis:** We observed the steepest drop (the "Elbow") when moving from $K=2$ to $K=3$ (from **31,229** to **25,753**).
+* **Silhouette Score Analysis:** Although $K=2$ had a higher score (**0.549**), the score for $K=3$ remained robust at **0.495**. 
+* **The Trade-off:** Choosing $K=3$ provided the most balanced "Business Logic," allowing a clear distinction between the "Elite", "Affluent", and "Everyday" users.
 
+### **2. Cluster Representation & Distribution**
+The following plots demonstrate the clear separation and financial behavior of the identified segments:
 
-
-## Visualizations & Insights
-
-Analyzing the mean financial metrics for each cluster reveals clear behavioral boundaries:
-
-![Mean Household Finances by Cluster](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/clusters.png)
+| **PCA Cluster Separation** | **Mean Financials per Cluster** |
+| :---: | :---: |
+| ![PCA Representation of Clusters](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/PCA.png)
+ | ![Mean Household Finances by Cluster](https://github.com/SawsanYusuf/Credit-Card-Customer-Clustering/blob/main/Images/clusters.png) 
 
 
 * **Cluster 1:** High spending and high payment activity (The Elite).
