@@ -37,7 +37,7 @@ To improve clustering performance, we focused on features with high discriminati
 ### 3. Model Development & Evaluation
 
 * **Scaling:** Applied `StandardScaler` to normalize the data before clustering.
-* **K-Means Tuning:** Iterated through  values (2 to 12) to find the optimal balance between **Inertia** and **Silhouette Score**.
+* **K-Means Tuning:** Iterated through K values (2 to 12) to find the optimal balance between **Inertia** and **Silhouette Score**.
 * **Final Decision:** Selected **$K=3$** as the optimal number of clusters for business interpretability.
 * **Visualization:** Used **PCA (Principal Component Analysis)** to represent the 3D clusters in a 2D space.
 
@@ -111,9 +111,11 @@ The model identified **three distinct customer clusters** that directly correlat
 
 ### Business Impact & Recommendations
 The integration of this segmentation model allows for:
-1.  **Hyper-Personalized Marketing:** Tailoring campaigns to the specific behavioral DNA of each cluster.
-2.  **Risk Mitigation:** Aligning credit limits with verified income brackets and spending patterns.
-3.  **Product Optimization:**
+1.  **Hyper-Personalized Marketing**: Tailoring campaigns to the specific behavioral DNA of each cluster.
+2.  **Risk Mitigation**: Aligning credit limits with verified income brackets and spending patterns.
+3.  **Product Optimization**: Designing tier-specific features aligned with real behavioral clusters rather than assumptions.
+
+هيك تص
 
 
 ## Technologies Used
