@@ -115,8 +115,6 @@ The integration of this segmentation model allows for:
 2.  **Risk Mitigation**: Aligning credit limits with verified income brackets and spending patterns.
 3.  **Product Optimization**: Designing tier-specific features aligned with real behavioral clusters rather than assumptions.
 
-هيك تص
-
 
 ## Technologies Used
 
